@@ -1,5 +1,14 @@
 
 
 body { background-color: grey;}
-h1 { color: moccasin;}
+
+
+h1 { color: black;}
+
+h2 { color: goldenrod;
+    border: 2px; }
+
+
 ul { color: aquamarine;}
+
+footer{ color: darkolivegreen;}
