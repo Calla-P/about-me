@@ -2,7 +2,7 @@
 let userName = prompt('What is your name?');
 console.log (userName);
 
-alert(' Greetings' + userName);
+alert(' Hello and Welcome ' + userName);
 let answer1 = prompt (' Does Paula enjoy nature? yes or no.');
 answer1 = answer1.toLowerCase();
 if (answer1 === 'yes'|| answer1 === 'y') {
