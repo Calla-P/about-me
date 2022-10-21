@@ -1,5 +1,5 @@
 'use stict';
-let userName = prompt('What is your name?');
+let userName = prompt(' What is your name? ');
 console.log (userName);
 
 alert(' Hello and Welcome ' + userName);
@@ -59,11 +59,11 @@ let answer5 = prompt ('Can she pick the best pineapple of all the grocery lands?
 answer5 = answer5.toLowerCase();
 if (answer5 === 'yes'|| answer5 === 'y'){
   //console.log('They agree');
-  alert('Absolutely' + userName + 'and with confidence. You ARE correct and awesome!' + userName);
+  alert('Absolutely ' + userName + ' and with confidence. You ARE correct and awesome! ' + userName);
 } else if (answer5 === 'no'|| answer5 ==='n'){
   //console.log('said no');
-  alert( userName + 'That is not right, she picks those pineapples nicely. You are kind for playing regardless of being wrong. lol ');
+  alert( userName + ' That is not right, she picks those pineapples nicely. You are kind for playing regardless of being wrong. lol ');
 } else {
   //console.log(' invalid response.');
-  alert('Bold statement'+ userName + 'but a y/n will get us where we need to go.');
+  alert('Bold statement ' + userName + ' but a y/n will get us where we need to go.');
 }
