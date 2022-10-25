@@ -1,2 +1,2 @@
 # about-me
-lab 1a and some of 2-5 prompts and things I will learn
+Lab 3 - Score keeper, Using Arrays, putting in loops, Styling in CSS
