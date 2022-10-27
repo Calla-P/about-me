@@ -41,19 +41,23 @@ function foodBaby() {
 
 foodBaby();
 
-let answer3 = prompt('Was she born in Costa Rica? y/n');
-answer3 = answer3.toLowerCase();
-if (answer3 === 'yes' || answer3 === 'y') {
+function costaRica() {
+  let answer3 = prompt('Was she born in Costa Rica? y/n');
+  answer3 = answer3.toLowerCase();
+  if (answer3 === 'yes' || answer3 === 'y') {
   //console.log('Correct');
-  alert('You are incredible and correct! Great Job.');
-  score++;
-} else if (answer3 === 'no' || answer3 === 'n') {
+    alert('You are incredible and correct! Great Job.');
+    score++;
+  } else if (answer3 === 'no' || answer3 === 'n') {
   //console.log('Incorrecto!');
-  alert('That is incorrect and you are rad for guessing!');
-} else {
+    alert('That is incorrect and you are rad for guessing!');
+  } else {
   //console.log('typing weird stuff I see');
-  alert('Guessing y/n will unlock other neat messages');
+    alert('Guessing y/n will unlock other neat messages');
+  }
 }
+
+costaRica();
 
 let answer4 = prompt('Does Paula spend time in saunas?');
 answer4 = answer4.toLowerCase();
