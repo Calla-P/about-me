@@ -77,26 +77,30 @@ function saunaTime() {
 
 saunaTime();
 
-let answer5 = prompt('Can she pick the best pineapple of all the grocery lands?');
-answer5 = answer5.toLowerCase();
-if (answer5 === 'yes' || answer5 === 'y') {
+function pineapplePal(userName) {
+  let answer5 = prompt('Can she pick the best pineapple of all the grocery lands?');
+  answer5 = answer5.toLowerCase();
+  if (answer5 === 'yes' || answer5 === 'y') {
   //console.log('They agree');
-  alert('Absolutely ' + userName + ', and with confidence. You ARE correct and awesome! ' );
-  score++;
-} else if (answer5 === 'no' || answer5 === 'n') {
+    alert('Absolutely ' + userName + ', and with confidence. You ARE correct and awesome! ' );
+    score++;
+  } else if (answer5 === 'no' || answer5 === 'n') {
   //console.log('said no');
-  alert(userName + ' That is not right, she picks those pineapples nicely. You are kind for playing regardless of being wrong. lol ');
-} else {
+    alert(userName + ' That is not right, she picks those pineapples nicely. You are kind for playing regardless of being wrong. lol ');
+  } else {
   //console.log(' invalid response.');
-  alert('Bold statement ' + userName + ' but a y/n will get us where we need to go.');
+    alert('Bold statement ' + userName + ' but a y/n will get us where we need to go.');
+  }
 }
+
+pineapplePal(userName);
 
 function guessANumber() {
 
   let attempt = 0;
+  let correctGuess = false;
 
-
-  while (attempt < 5) {
+  while (attempt < 4 && correctGuess === false) {
     let answer1 = prompt('Guess a number between 1-10');
     if (answer1 > 5) {
       //console.log('corret');
@@ -109,11 +113,11 @@ function guessANumber() {
     }
     else {
       //console.log('invalid');
-      attempt = 6;
+      correctGuess = true;
       break;
     }
   }
-  if (attempt === 6) {
+  if (correctGuess === true) {
     //console.log('corret');
     alert(' You got it right! It is 5!');
     score++;
@@ -129,7 +133,7 @@ let statesIlived = ['alabama', 'florida', 'montana', 'colorado'];
 
 function questionSeven() {
   let attempts = 0;
-  while (attempts <= 6) {
+  while (attempts < 6) {
     let answer7 = prompt(
       userName + ', You have come a long way. Thank you. Now take a sip of water and answer the last question. Which of the following states have I lived in? (guess one): Alabama, Idaho, Flordia, Montana, California, Mississippi, Colorado, New Jersey '
     );
