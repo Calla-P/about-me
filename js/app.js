@@ -23,19 +23,23 @@ function natureYes(userName) {
 
 natureYes(userName);
 
-let answer2 = prompt('Is her favorite food fish? y/n');
-answer2 = answer2.toLowerCase();
-if (answer2 === 'yes' || answer2 === 'y') {
+function foodBaby() {
+  let answer2 = prompt('Is her favorite food fish? y/n');
+  answer2 = answer2.toLowerCase();
+  if (answer2 === 'yes' || answer2 === 'y') {
   //console.log('Incorrect');
-  alert('Absolutely not, I dont hate it but I heckin never really crave it');
-} else if (answer2 === 'no' || answer2 === 'n') {
+    alert('Absolutely not, I dont hate it but I heckin never really crave it');
+  } else if (answer2 === 'no' || answer2 === 'n') {
   //console.log(' Correcto Mundo ');
-  alert('You know Paula well, wowzers!');
-  score++;
-} else {
+    alert('You know Paula well, wowzers!');
+    score++;
+  } else {
   //console.log('Why they no participate?');
-  alert('Please try a yes or a no to get special message.');
+    alert('Please try a yes or a no to get special message.');
+  }
 }
+
+foodBaby();
 
 let answer3 = prompt('Was she born in Costa Rica? y/n');
 answer3 = answer3.toLowerCase();
