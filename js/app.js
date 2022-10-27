@@ -130,24 +130,26 @@ function guessANumber() {
 guessANumber();
 
 let statesIlived = ['alabama', 'florida', 'montana', 'colorado'];
-
 function questionSeven() {
   let attempts = 0;
-  while (attempts < 6) {
+  let correctGuess = false;
+  while (attempts < 6 && correctGuess === false) {
     let answer7 = prompt(
       userName + ', You have come a long way. Thank you. Now take a sip of water and answer the last question. Which of the following states have I lived in? (guess one): Alabama, Idaho, Flordia, Montana, California, Mississippi, Colorado, New Jersey '
     );
     let stateEye = answer7.toLowerCase();
-    for (let i = 0; i <= statesIlived.length; i++) {
+    for (let i = 0; i < statesIlived.length; i++) {
       if (statesIlived[i] === stateEye) {
-        attempts = 7;
+        correctGuess = true;
         alert('You got it right');
         score++;
         break;
       }
     }
+    if (correctGuess === false) {
+      alert('Keep trying :)');
+    }
     attempts++;
-
   }
 }
 questionSeven();
