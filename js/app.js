@@ -59,19 +59,23 @@ function costaRica() {
 
 costaRica();
 
-let answer4 = prompt('Does Paula spend time in saunas?');
-answer4 = answer4.toLowerCase();
-if (answer4 === 'yes' || answer4 === 'y') {
+function saunaTime() {
+  let answer4 = prompt('Does Paula spend time in saunas?');
+  answer4 = answer4.toLowerCase();
+  if (answer4 === 'yes' || answer4 === 'y') {
   //console.log('Typed yes');
-  alert(' You are on to her, Three times a week, my friend.');
-  score++;
-} else if (answer4 === 'no' || answer4 === 'n') {
+    alert(' You are on to her, Three times a week, my friend.');
+    score++;
+  } else if (answer4 === 'no' || answer4 === 'n') {
   //console.log('Is wrong for that.lol');
-  alert('If no meant yes you would be right but you are wrong and that is fine.');
-} else {
+    alert('If no meant yes you would be right but you are wrong and that is fine.');
+  } else {
   //console.log('whyyyyy no play?');
-  alert('yes or a no is the way to go!');
+    alert('yes or a no is the way to go!');
+  }
 }
+
+saunaTime();
 
 let answer5 = prompt('Can she pick the best pineapple of all the grocery lands?');
 answer5 = answer5.toLowerCase();
