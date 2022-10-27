@@ -1,23 +1,27 @@
-'use stict';
+'use strict';
 
 let score = 0;
 let userName = prompt(' What is your name? ');
 console.log(userName);
 
-alert(' Hello and Welcome ' + userName);
-let answer1 = prompt(' Does Paula enjoy nature? yes or no.');
-answer1 = answer1.toLowerCase();
-if (answer1 === 'yes' || answer1 === 'y') {
+function natureYes(userName) {
+  alert(' Hello and Welcome ' + userName);
+  let answer1 = prompt(' Does Paula enjoy nature? yes or no.');
+  answer1 = answer1.toLowerCase();
+  if (answer1 === 'yes' || answer1 === 'y') {
   //console.log('You got it dude!');
-  alert('Heck yes, I love that you know that about me!');
-  score++;
-} else if (answer1 === 'no' || answer1 === 'n') {
+    alert('Heck yes, I love that you know that about me!');
+    score++;
+  } else if (answer1 === 'no' || answer1 === 'n') {
   //console.log('Good guess, but that is heckin false. She be loving the nature.' );
-  alert('Good guess, but that is heckin false. She be loving the nature.');
-} else {
+    alert('Good guess, but that is heckin false. She be loving the nature.');
+  } else {
   //console.log('Well that is just invalid.');
-  alert('Participate with a yes or no, it is fun.');
+    alert('Participate with a yes or no, it is fun.');
+  }
 }
+
+natureYes(userName);
 
 let answer2 = prompt('Is her favorite food fish? y/n');
 answer2 = answer2.toLowerCase();
