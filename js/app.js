@@ -2,7 +2,7 @@
 
 let score = 0;
 let userName = prompt(' What is your name? ');
-console.log(userName);
+
 
 function natureYes(userName) {
   alert(' Hello and Welcome ' + userName);
